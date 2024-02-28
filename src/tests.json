@@ -1,0 +1,55 @@
+{
+    "tests": [
+      {
+        "name": "Ahlgrens bilar",
+        "description": "Smkar vit, grön och röd likadant?",
+        "alternatives": ["vit", "grön", "röd"],
+        "truth": [0, 1, 2, 1, 0, 1, 2],
+        "judge": "Arvid",
+        "participants": [
+          {
+            "name": "William",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Carl",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Simon",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Jimmy",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          }
+        ]
+      },
+      {
+        "name": "Choklad bilar",
+        "description": "Smakar dom olika?",
+        "alternatives": ["vit", "grön", "röd"],
+        "truth": [0, 1, 2, 1, 0, 1, 2],
+        "judge": "Unknown",
+        "participants": [
+          {
+            "name": "William",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Stefan",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Jonas",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          },
+          {
+            "name": "Kalle",
+            "guesses": [0, 1, 2, 0, 1, 2, 0, 1]
+          }
+        ]
+      }
+    ]
+}
+  

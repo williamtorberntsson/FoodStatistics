@@ -1,0 +1,9 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.test {
+    margin: 20px;
+}

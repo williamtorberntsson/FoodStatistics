@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import data from "./tests.json";
+import "./Statistics.css";
 
 const Statistics = () => {
   const [tests, setTests] = useState([]);
@@ -14,9 +15,9 @@ const Statistics = () => {
   };
 
   return (
-    <div className="app-container"> {/* Apply a class for centering */}
+    <div className="statistics"> {/* Apply a class for centering */}
       {tests.map(test => (
-        <div key={test.name}>
+        <div className="test" key={test.name}>
           <h2>{test.name}</h2>
           <p>{test.description}</p>
           <div className="alternatives">

@@ -1,0 +1,109 @@
+{
+    "tests": [
+      {
+        "name": "Ahlgrens bilar",
+        "description": "Smkar vit, grön och röd likadant?",
+        "alternatives": ["vit", "grön", "röd"],
+        "truth": [2, 0, 1, 1, 2, 1, 0, 0],
+        "judge": "Arvid",
+        "participants": [
+          {
+            "name": "William",
+            "guesses": [1, 2, 0, 2, 0, 1, 2, 1]
+          },
+          {
+            "name": "Carl",
+            "guesses": [2, 1, 1, 0, 2, 2, 1, 0]
+          },
+          {
+            "name": "Simon",
+            "guesses": [0, 2, 0, 1, 1, 2, 0, 1]
+          },
+          {
+            "name": "Jimmy",
+            "guesses": [2, 0, 0, 0, 2, 1, 2, 0]
+          }
+        ]
+      },
+      {
+        "name": "Choklad",
+        "description": "Känner man skillnad på styrka?",
+        "alternatives": ["svag", "mellan", "stark"],
+        "truth": [2, 1, 1, 0, 2, 1, 0, 2],
+        "judge": "Emily",
+        "participants": [
+          {
+            "name": "William",
+            "guesses": [1, 1, 2, 0, 1, 0, 0, 2]
+          },
+          {
+            "name": "Sebastian",
+            "guesses": [1, 0, 2, 0, 1, 2, 0, 2]
+          },
+          {
+            "name": "Jimmy",
+            "guesses": [2, 1, 1, 2, 2, 0, 0, 1]
+          },
+          {
+            "name": "Simon",
+            "guesses": [2, 2, 1, 0, 1, 2, 0, 1]
+          }
+        ]
+      },
+      {
+        "name": "Trocadero",
+        "description": "Känner man skillnad på Trocadero?",
+        "alternatives": ["original", "zero", "hallon"],
+        "truth": [2, 0, 2, 1, 1, 0, 2, 1],
+        "judge": "Emily",
+        "participants": [
+          {
+            "name": "William",
+            "guesses": [2, 1, 0, 0, 1, 2, 2, 0]
+          },
+          {
+            "name": "Simon",
+            "guesses": [2, 0, 1, 0, 0, 2, 2, 2]
+          },
+          {
+            "name": "Jimmy",
+            "guesses": [0, 1, 0, 1, 2, 0, 2, 1]
+          },
+          {
+            "name": "Carl",
+            "guesses": [1, 1, 0, 1, 2, 2, 0, 2]
+          }
+        ]
+      },
+      {
+        "name": "Små godisar",
+        "description": "Känner man skillnad på små godisar?",
+        "alternatives": ["grön", "gul", "röd"],
+        "truth": [2, 2, 0, 1, 2, 1, 0, 1],
+        "judge": "Hans",
+        "participants": [
+          {
+            "name": "Jimmy",
+            "guesses": [2, 1, 0, 2, 0, 0, 2, 2]
+          },
+          {
+            "name": "Sebastian",
+            "guesses": [2, 2, 0, 1, 1, 0, 0, 2]
+          },
+          {
+            "name": "Simon",
+            "guesses": [2, 1, 0, 1, 2, 0, 0, 1]
+          },
+          {
+            "name": "William",
+            "guesses": [0, 0, 2, 1, 2, 0, 1, 2]
+          },
+          {
+            "name": "Carl",
+            "guesses": [2, 1, 0, 0, 1, 0, 1, 2]
+          }
+        ]
+      }
+    ]
+}
+  

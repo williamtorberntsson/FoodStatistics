@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import data from "./tests.json";
+import data from "./data.json";
 import "./Statistics.css";
 
 const Statistics = () => {

@@ -3,72 +3,86 @@ import data from "./data.json";
 import "./Statistics.css";
 
 const Statistics = () => {
-  const [tests, setTests] = useState([]);
+  const [scores, setScores] = useState({});
+  const [hoveredTestName, setHoveredTestName] = useState(null);
 
   useEffect(() => {
-    setTests(data.tests);
-  }, [])
+    // Calculate scores for each participant
+    const calculatedScores = data.tests.reduce((acc, test) => {
+      test.participants.forEach(({ name, guesses }) => {
+        if (!acc[name]) acc[name] = { total: 0, tests: [] };
+        
+        const correctGuesses = guesses.reduce((total, guess, index) => (
+          total + (guess === test.truth[index] ? 1 : 0)
+        ), 0);
 
-  const calculateCorrectness = (participant, test) => {
-    const correctGuesses = participant.guesses.filter((guess, index) => guess === test.truth[index]).length;
-    return (correctGuesses / test.truth.length) * 100;
-  };
+        const score = (correctGuesses / test.truth.length) * 100;
+        acc[name].total += score;
+        acc[name].tests.push({ name: test.name, score });
+      });
+      
+      return acc;
+    }, {});
+
+    setScores(calculatedScores);
+  }, []);
+
+  const findTestByName = (name) => data.tests.find(test => test.name === name);
 
   return (
-    <div className="statistics"> {/* Apply a class for centering */}
-      {tests.map(test => (
-        <div className="test" key={test.name}>
-          <h2>{test.name}</h2>
-          <p>{test.description}</p>
-          <div className="alternatives">
-            <p>Alternatives:</p>
-            <ul>
-              {test.alternatives.map((alternative, index) => (
-                <li key={index}>{alternative}</li>
+    <div className="statistics">
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <table>
+          <thead>
+            <tr>
+              <th>Participant</th>
+              <th>Total Score (%)</th>
+              {data.tests.map((test) => (
+                <th key={test.name}
+                    onMouseEnter={() => setHoveredTestName(test.name)}
+                    onMouseLeave={() => setHoveredTestName(null)}>
+                  {test.name} (%)
+                </th>
               ))}
-            </ul>
-          </div>
-          <table>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(scores).map(([participantName, details]) => (
+              <tr key={participantName}>
+                <td>{participantName}</td>
+                <td>{(details.total / data.tests.length).toFixed(2)}</td>
+                {data.tests.map(test => {
+                  const testScore = details.tests.find(t => t.name === test.name)?.score.toFixed(2) || "0.00";
+                  return <td key={test.name}>{testScore}</td>;
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        {hoveredTestName && (
+          <table style={{ marginLeft: "20px" }}>
             <thead>
               <tr>
                 <th>Participant</th>
-                <th>Guesses</th>
+                <th>Guess</th>
+                <th>Correctness</th>
               </tr>
             </thead>
             <tbody>
-              {/* Rows for participants */}
-              {test.participants.map(participant => (
+              {findTestByName(hoveredTestName).participants.map(participant => (
                 <tr key={participant.name}>
                   <td>{participant.name}</td>
-                  <td>{participant.guesses.map((guess, index) => (
-                    <span key={index}>{test.alternatives[guess]}{(index !== participant.guesses.length - 1) && ", "}</span>
-                  ))}
-                  </td>
+                  <td>{participant.guesses.join(", ")}</td>
+                  <td>{participant.guesses.filter((guess, index) => guess === findTestByName(hoveredTestName).truth[index]).length}/{findTestByName(hoveredTestName).truth.length}</td>
                 </tr>
               ))}
-              <tr key="GroundTruth">
-                <td>Ground Truth</td>
-                <td>{test.truth.map((result, index) => (
-                  <span key={index}>{test.alternatives[result]}{(index !== test.truth.length - 1) && ", "}</span>
-                ))}
-                </td>
-              </tr>
             </tbody>
           </table>
-          <div className="correctness">
-            <p>Correctness:</p>
-            <ul>
-              {test.participants.map(participant => (
-                <li key={participant.name}>
-                  {participant.name}: {calculateCorrectness(participant, test).toFixed(2)}%
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default Statistics;

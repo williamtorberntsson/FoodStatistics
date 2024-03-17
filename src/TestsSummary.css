@@ -1,0 +1,29 @@
+/* src/TestsSummary.css */
+.table-responsive {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: auto; /* Adjust based on your content or keep it auto */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #e2e2e2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #5b5b5b;
+}
+
+@media screen and (max-width: 600px) {
+  th,
+  td {
+    padding: 20px;
+  }
+}

@@ -1,8 +1,8 @@
 .statistics {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align tables to the top */
-  max-width: 100%; /* Ensure the container does not exceed the viewport width */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Optional: Adjust based on layout needs */
 }
 
 .statistics > div {

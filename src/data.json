@@ -2,10 +2,11 @@
   "tests": [
     {
       "name": "Ahlgrens bilar",
-      "description": "Smkar vit, grön och röd likadant?",
+      "description": "Smakar vit, grön och röd likadant?",
       "alternatives": ["vit", "grön", "röd"],
       "truth": [2, 0, 1, 1, 2, 1, 0, 0],
       "judge": "Arvid",
+      "buyer": "Jimmy",
       "participants": [
         {
           "name": "Jimmy",
@@ -31,6 +32,7 @@
       "alternatives": ["svag", "mellan", "stark"],
       "truth": [2, 1, 1, 0, 2, 1, 0, 2],
       "judge": "Emily",
+      "buyer": "None",
       "participants": [
         {
           "name": "William",
@@ -56,6 +58,7 @@
       "alternatives": ["original", "zero", "hallon"],
       "truth": [2, 0, 2, 1, 1, 0, 2, 1],
       "judge": "Emily",
+      "buyer": "Jimmy",
       "participants": [
         {
           "name": "William",
@@ -81,6 +84,7 @@
       "alternatives": ["grön", "gul", "röd"],
       "truth": [2, 2, 0, 1, 2, 1, 0, 1],
       "judge": "Hans",
+      "buyer": "William",
       "participants": [
         {
           "name": "Jimmy",
@@ -110,6 +114,7 @@
       "alternatives": ["grön", "blå", "röd"],
       "truth": [1, 2, 0, 2, 0, 0, 2, 1],
       "judge": "Fredrik",
+      "buyer": "Simon",
       "participants": [
         {
           "name": "Jimmy",

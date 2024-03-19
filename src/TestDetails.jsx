@@ -21,15 +21,21 @@ const TestDetails = () => {
     })
     .sort((a, b) => b.correctness - a.correctness);
 
+  if (!test) {
+    return <p>Test not found. Please select a valid test.</p>;
+  }
+
   return (
     <div>
       <button onClick={() => navigate("/")}>Back to Homepage</button>
-      <h2>{testName}</h2>
+      <h2>Test: {testName}</h2>
+      <h3>Judge: {test.judge}</h3>
+      <p>{test.description}</p>
       <table>
         <thead>
           <tr>
             <th>Participant</th>
-            <th>Correctness (%)</th>
+            <th>Correctness</th>
           </tr>
         </thead>
         <tbody>
@@ -38,6 +44,7 @@ const TestDetails = () => {
               <td>
                 <Link
                   to={`/participant/${encodeURIComponent(participant.name)}`}
+                  className="link-style"
                 >
                   {participant.name}
                 </Link>

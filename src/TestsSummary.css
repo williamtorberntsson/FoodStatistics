@@ -1,29 +1,27 @@
-/* src/TestsSummary.css */
-.table-responsive {
-  display: flex;
-  justify-content: center;
-}
-
 table {
   margin: auto;
   border-collapse: collapse;
-  width: auto; /* Adjust based on your content or keep it auto */
+  width: auto;
 }
 
 th,
 td {
   text-align: left;
   padding: 8px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #6d5b32;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #5b5b5b;
+  background-color: #282828;
+}
+
+.link-style {
+  color: rgb(72, 72, 127); /* Or any other color */
 }
 
 @media screen and (max-width: 600px) {
   th,
   td {
-    padding: 20px;
+    padding: 12px;
   }
 }

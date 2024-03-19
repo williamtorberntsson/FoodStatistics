@@ -41,21 +41,24 @@ const TestsSummary = () => {
   );
 
   return (
-    <div className="table-responsive">
+    <div>
+      <h2>All Participants Summary</h2>
       <table>
         <thead>
           <tr>
             <th>Participant</th>
-            <th>Correctness (%)</th>
+            <th>Correctness</th>
           </tr>
         </thead>
         <tbody>
           {sortedParticipants.map(({ name, score }) => (
             <tr key={name} className="table-row">
               <td>
-                <Link to={`/participant/${name}`}>{name}</Link>
+                <Link to={`/participant/${name}`} className="link-style">
+                  {name}
+                </Link>
               </td>
-              <td>{score.toFixed(2)}%</td>
+              <td>{score.toFixed(2)} %</td>
             </tr>
           ))}
         </tbody>

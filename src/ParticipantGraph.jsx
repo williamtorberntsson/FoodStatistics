@@ -1,8 +1,8 @@
-// src/ParticipantGraph.js
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
-import data from "./data.json"; // Assuming the path to your data file is correct
+import data from "./data.json";
+import "./ParticipantGraph.css";
 
 const ParticipantGraph = ({ participantName }) => {
   // Extracting and calculating tests data for the specific participant, sorted by correctness
@@ -61,7 +61,11 @@ const ParticipantGraph = ({ participantName }) => {
     },
   };
 
-  return <Bar data={chartData} options={options} />;
+  return (
+    <div className="participant-graph">
+      <Bar data={chartData} options={options} />
+    </div>
+  );
 };
 
 export default ParticipantGraph;

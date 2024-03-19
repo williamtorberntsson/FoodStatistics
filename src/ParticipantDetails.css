@@ -1,0 +1,15 @@
+.participant-card {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #393939;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .participant-card {
+    padding: 15px;
+  }
+}

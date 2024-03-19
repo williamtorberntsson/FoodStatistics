@@ -16,7 +16,18 @@ tbody tr:nth-child(odd) {
 }
 
 .link-style {
-  color: rgb(72, 72, 127); /* Or any other color */
+  color: rgb(91, 91, 177);
+}
+
+/* Change colors on table for light-mode plebs */
+@media (prefers-color-scheme: light) {
+  tbody tr:nth-child(odd) {
+    background-color: #ececec;
+  }
+
+  .link-style {
+    color: rgb(26, 36, 132);
+  }
 }
 
 @media screen and (max-width: 600px) {

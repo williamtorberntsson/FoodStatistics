@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import data from "./data.json";
 import ParticipantGraph from "./ParticipantGraph";
+import "./ParticipantDetails.css";
 
 const ParticipantDetails = () => {
   let { name } = useParams();
@@ -31,6 +32,7 @@ const ParticipantDetails = () => {
       ).length;
       const correctness = (correctGuesses / test.truth.length) * 100;
       const pValue = calculatePValue(correctGuesses, test.truth.length); // Calculate p-value for each test
+
       return {
         ...test,
         correctness,
@@ -39,11 +41,45 @@ const ParticipantDetails = () => {
     })
     .sort((a, b) => b.correctness - a.correctness); // Sort by correctness in descending order
 
+  // Calculate the average correctness
+  const averageCorrectness =
+    participantTests.reduce((acc, curr) => acc + curr.correctness, 0) /
+    participantTests.length;
+
+  // Assuming 'name' is the participant's name obtained from useParams()
+  const numberOfParticipatedTests = data.tests.filter((test) =>
+    test.participants.some((participant) => participant.name === name)
+  ).length;
+
+  const numberOfTestsAsBuyer = data.tests.filter(
+    (test) => test.buyer === name
+  ).length;
+
+  // Total number of tests
+  const totalTests = data.tests.length;
+
+  // Calculate the participation percentage
+  const participationPercentage =
+    (numberOfParticipatedTests / totalTests) * 100;
+
+  const buyerPercentage = (numberOfTestsAsBuyer / totalTests) * 100;
+
   return (
     <div>
       <button onClick={() => navigate("/")}>Back to Homepage</button>
       <h2>Participant: {name}</h2>
       <ParticipantGraph participantName={name} />
+      <div className="participant-card">
+        <p>
+          Participated in {numberOfParticipatedTests} out of {totalTests} tests
+          ({participationPercentage.toFixed(2)} %)
+        </p>
+        <p>
+          Listed as buyer in {numberOfTestsAsBuyer} / {totalTests} tests (
+          {buyerPercentage.toFixed(2)} %)
+        </p>
+        <p>Average Correctness: {averageCorrectness.toFixed(2)} %</p>
+      </div>
       <table>
         <thead>
           <tr>

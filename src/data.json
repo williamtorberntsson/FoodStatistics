@@ -79,8 +79,8 @@
       ]
     },
     {
-      "name": "Små godisar",
-      "description": "Känner man skillnad på små godisar?",
+      "name": "Frukttoppar",
+      "description": "Känner man skillnad på frukttoppar?",
       "alternatives": ["grön", "gul", "röd"],
       "truth": [2, 2, 0, 1, 2, 1, 0, 1],
       "judge": "Hans",

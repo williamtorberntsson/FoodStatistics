@@ -163,6 +163,32 @@
           "guesses": [1, 2, 0, 1, 2, 0, 1, 0]
         }
       ]
+    },
+    {
+      "name": "Cola",
+      "description": "Känner man skillnad på olika cola drycker?",
+      "alternatives": ["Coca Cola", "Pepsi", "Dr.Pepper"],
+      "truth": [1, 0, 0, 2, 1, 2, 0, 0],
+      "judge": "Emily",
+      "buyer": "Carl",
+      "participants": [
+        {
+          "name": "Jimmy",
+          "guesses": [1, 0, 0, 2, 1, 2, 0, 0]
+        },
+        {
+          "name": "Simon",
+          "guesses": [1, 0, 0, 2, 1, 0, 0, 0]
+        },
+        {
+          "name": "William",
+          "guesses": [1, 0, 1, 2, 0, 2, 0, 0]
+        },
+        {
+          "name": "Carl",
+          "guesses": [1, 0, 0, 2, 1, 2, 0, 1]
+        }
+      ]
     }
   ]
 }

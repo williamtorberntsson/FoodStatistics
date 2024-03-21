@@ -5,9 +5,10 @@
   .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    align-items: center;
     text-align: center;
-    padding-top: 800px;
+    /*padding-top: 800px;*/
   }
   
   body,
@@ -31,9 +32,10 @@
   .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    align-items: center;
     text-align: center;
-    padding-top: 200px;
+    /*padding-top: 200px;*/
   }
   
   body,

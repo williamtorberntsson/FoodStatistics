@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
+        <h1>SAAAB Statistics</h1> {/* Add your title element */}
         <Routes>
           <Route
             path="/"

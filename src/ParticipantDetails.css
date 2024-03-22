@@ -1,3 +1,10 @@
+.correctness-gradient {
+  color: transparent; /* Hide text color */
+  background-image: linear-gradient(to right, red 0%, yellow 50%, green 100%); /* Gradient from red to yellow to green */
+  background-clip: text; /* Clip text to gradient */
+  -webkit-background-clip: text; /* For Safari */
+}
+
 .participant-card {
   margin: 20px 0;
   padding: 20px;

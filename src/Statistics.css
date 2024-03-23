@@ -10,6 +10,13 @@
   flex-direction: column;
 }
 
+.correctness-gradient {
+  color: transparent; /* Hide text color */
+  background-image: linear-gradient(to right, red 0%, yellow 50%, green 100%); 
+  background-clip: text; /* Clip text to gradient */
+  -webkit-background-clip: text; /* For Safari */
+}
+
 table {
   border-collapse: collapse;
   margin-right: 20px; /* Add some space between the main table and the details table */

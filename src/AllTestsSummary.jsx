@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "./data.json";
+import "./AllTestsSummary.css";
 
 const AllTestsSummary = () => {
   // Calculate the average correctness for each test and include test name
@@ -26,7 +27,25 @@ const AllTestsSummary = () => {
       };
     })
     .sort((a, b) => b.averageCorrectness - a.averageCorrectness); // Sort tests by average correctness in descending order
+      
+  // Function to calculate color based on percentage
+  const getColorForPercentage = (percentage) => {
+    // Interpolate between red (0%) and green (100%)
+    const red = 255 * ((100 - percentage) / 100);
+    const green = 255 * (percentage / 100);
+    return `rgb(${red}, ${green}, 0)`;
+  };
 
+  // Function to render percentage with dynamically calculated color
+  const renderColoredPercentage = (percentage) => {
+    const color = getColorForPercentage(percentage);
+    return (
+      <span style={{ color }} className="colored-percentage">
+        {percentage.toFixed(2)} %
+      </span>
+    );
+  };
+  
   return (
     <div>
       <h2>All Tests Summary</h2>
@@ -48,7 +67,7 @@ const AllTestsSummary = () => {
                   {testName}
                 </Link>
               </td>
-              <td>{averageCorrectness.toFixed(2)} %</td>
+              <td className="correctness-gradient">{renderColoredPercentage(averageCorrectness)}</td>
             </tr>
           ))}
         </tbody>

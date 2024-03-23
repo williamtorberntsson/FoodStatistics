@@ -26,6 +26,22 @@ const TestsSummary = () => {
       : 0;
   };
 
+  // Function to calculate color based on percentage
+  const getColorForPercentage = (percentage) => {
+    // Interpolate between red (0%) and green (100%)
+    const red = 255 * ((100 - percentage) / 100);
+    const green = 255 * (percentage / 100);
+    return `rgb(${red}, ${green}, 0)`;
+  };
+
+  // Function to render percentage with dynamically calculated color
+  const renderColoredPercentage = (percentage) => {
+    const color = getColorForPercentage(percentage);
+    return (
+      <span style={{ color }}>{percentage.toFixed(2)} %</span>
+    );
+  };
+
   // Generate an array of participants with their scores
   const participantsScores = data.tests
     .flatMap((test) => test.participants.map((participant) => participant.name))
@@ -58,7 +74,7 @@ const TestsSummary = () => {
                   {name}
                 </Link>
               </td>
-              <td>{score.toFixed(2)} %</td>
+              <td>{renderColoredPercentage(score)}</td>
             </tr>
           ))}
         </tbody>

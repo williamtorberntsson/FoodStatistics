@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import data from "./data.json";
+import "./TestDetails.css";
 
 const TestDetails = () => {
   let { testName } = useParams();
@@ -24,6 +25,22 @@ const TestDetails = () => {
   if (!test) {
     return <p>Test not found. Please select a valid test.</p>;
   }
+
+  // Function to calculate color based on percentage
+  const getColorForPercentage = (percentage) => {
+    // Interpolate between red (0%) and green (100%)
+    const red = 255 * ((100 - percentage) / 100);
+    const green = 255 * (percentage / 100);
+    return `rgb(${red}, ${green}, 0)`;
+  };
+
+  // Function to render percentage with dynamically calculated color
+  const renderColoredPercentage = (percentage) => {
+    const color = getColorForPercentage(percentage);
+    return (
+      <span style={{ color }}>{percentage.toFixed(2)} %</span>
+    );
+  };
 
   return (
     <div>
@@ -49,7 +66,7 @@ const TestDetails = () => {
                   {participant.name}
                 </Link>
               </td>
-              <td>{participant.correctness.toFixed(2)}%</td>
+              <td>{renderColoredPercentage(participant.correctness)}</td>
             </tr>
           ))}
         </tbody>

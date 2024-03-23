@@ -1,3 +1,8 @@
 .participant-graph {
   margin-bottom: 25px;
 }
+
+.colored-percentage {
+  /* You can customize the color and other styles as needed */
+  font-weight: bold;
+}

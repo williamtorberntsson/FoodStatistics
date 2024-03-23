@@ -32,7 +32,9 @@ const ParticipantDetails = () => {
   const renderColoredPercentage = (percentage) => {
     const color = getColorForPercentage(percentage);
     return (
-      <span style={{ color }}>{percentage.toFixed(2)} %</span>
+      <span style={{ color }} className="colored-percentage">
+        {percentage.toFixed(2)} %
+      </span>
     );
   };
 

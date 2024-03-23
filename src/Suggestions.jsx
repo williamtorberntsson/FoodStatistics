@@ -1,28 +1,25 @@
 import React from "react";
-import data from "./data.json";
-/*import "./Suggestions.css";*/
+import data from "./futureTests.json";
 import { Link } from "react-router-dom";
 
 function Suggestions() {
+  const futureTests = data.futureTests; // Adjusted to use "futureTests"
+
   return (
     <div>
-      <h2>Upcomming Tests</h2>
+      <h2>Upcoming Tests</h2>
       <table>
         <thead>
           <tr>
-            <th>Test Name</th>
+            <th>Test suggestions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Paprika</td>
-          </tr>
-          <tr>
-            <td>Kolsyrat Vatten</td>
-          </tr>
-          <tr>
-            <td>REDO OLD TESTS!</td>
-          </tr>
+          {futureTests.map((test, index) => ( // Adjusted to use "futureTests"
+            <tr key={index}>
+              <td>{test.name}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

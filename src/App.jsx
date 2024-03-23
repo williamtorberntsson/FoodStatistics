@@ -5,8 +5,9 @@ import ParticipantDetails from "./ParticipantDetails";
 import TestDetails from "./TestDetails";
 import AllTestsSummary from "./AllTestsSummary";
 import AllJudgesSummary from "./AllJudgesSummary";
-/*import Suggestions from "./Suggestions";*/
+import Suggestions from "./Suggestions";
 import "./App.css";
+
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <TestsSummary />
                 <AllTestsSummary />
                 <AllJudgesSummary />
+                <Suggestions/>
               </div>
             }
           />

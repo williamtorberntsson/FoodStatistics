@@ -1,3 +1,15 @@
+.correctness-gradient {
+  color: transparent; /* Hide text color */
+  background-image: linear-gradient(to right, red 0%, yellow 50%, green 100%); 
+  background-clip: text; /* Clip text to gradient */
+  -webkit-background-clip: text; /* For Safari */
+}
+
+.colored-percentage {
+  /* You can customize the color and other styles as needed */
+  font-weight: bold;
+}
+
 table {
   margin: auto;
   border-collapse: collapse;

@@ -26,15 +26,12 @@ html {
 
 /* Phone size */
 @media only screen and (max-width: 600px) {
-  
 }
 
 /* Larger screens */
 @media only screen and (min-width: 601px) {
-
   .app-container {
-    max-width: 1200px; 
+    max-width: 1200px;
     padding: 0 20px;
   }
 }
-

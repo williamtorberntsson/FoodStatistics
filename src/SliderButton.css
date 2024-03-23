@@ -1,0 +1,41 @@
+.slider {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.slider-checkbox {
+  display: none;
+}
+
+.slider-button {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3; /* Default color */
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.slider-checkbox:checked + .slider-button {
+  background-color: #4CAF50; /* Color when checked */
+}
+
+.slider-button::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.slider-checkbox:checked + .slider-button::before {
+  transform: translateX(30px);
+}

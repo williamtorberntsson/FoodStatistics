@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import tasteData from "./tasteData.json";
+import "./App.css";
+
 
 const CategoryDetails = () => {
   const [expandedCategory, setExpandedCategory] = useState(null);

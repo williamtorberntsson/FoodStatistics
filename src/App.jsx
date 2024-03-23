@@ -7,7 +7,9 @@ import AllTestsSummary from "./AllTestsSummary";
 import AllJudgesSummary from "./AllJudgesSummary";
 import Suggestions from "./Suggestions";
 import TasteTestSummary from "./TasteTestSummary";
+import SliderButton from "./SliderButton";
 import "./App.css";
+
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
@@ -21,10 +23,7 @@ function App() {
     <Router>
       <div className="app-container">
         <h1>SAAAB Statistics</h1> {/* Add your title element */}
-        <label className="switch">
-          <input type="checkbox" checked={isToggled} onChange={handleToggle} />
-          <span className="slider round"></span>
-        </label>
+        <div> <SliderButton isChecked={isToggled} handleCheckboxChange={handleToggle} /></div>
         <Routes>
           <Route
             path="/"

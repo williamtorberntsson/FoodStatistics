@@ -1,29 +1,33 @@
 import React from "react";
-import data from "./futureTests.json";
-import { Link } from "react-router-dom";
+import futureTests from "./futureTests.json";
 
-function Suggestions() {
-  const futureTests = data.futureTests; // Adjusted to use "futureTests"
-
+const FutureTests = () => {
   return (
     <div>
-      <h2>Upcoming Tests</h2>
+      <h2>Future Taste Tests</h2>
       <table>
         <thead>
           <tr>
-            <th>Test suggestions</th>
+            <th>Upcoming Tests</th>
           </tr>
         </thead>
         <tbody>
-          {futureTests.map((test, index) => ( // Adjusted to use "futureTests"
+          {futureTests.futureTests.map((test, index) => (
             <tr key={index}>
-              <td>{test.name}</td>
+              <td>
+                <strong>{test.name}</strong>
+                <ul>
+                  {test.itemsToTest.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
   );
-}
+};
 
-export default Suggestions;
+export default FutureTests;

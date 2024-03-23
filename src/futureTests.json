@@ -1,7 +1,12 @@
 {
-    "futureTests": [
-      { "name": "Paprika" },
-      { "name": "Kolsyrat Vatten" },
-      { "name": "REDO OLD TESTS!" }
-    ]
-  }
+  "futureTests": [
+    {
+      "name": "Paprika",
+      "itemsToTest": ["Röd", "Gul", "Grön"]
+    },
+    {
+      "name": "Vatten",
+      "itemsToTest": ["Kranvatten", "Loka", "Ramlösa"]
+    }
+  ]
+}

@@ -143,6 +143,7 @@
       "description": "Känner man skillnad på Tutti Frutti Ringar?",
       "alternatives": ["Röd/Gul", "Rosa/Vit", "Svart"],
       "truth": [0, 2, 0, 1, 2, 1, 1, 0],
+      "date": 20240319,
       "judge": "Olov",
       "buyer": "William",
       "participants": [
@@ -169,6 +170,7 @@
       "description": "Känner man skillnad på olika cola drycker?",
       "alternatives": ["Coca Cola", "Pepsi", "Dr.Pepper"],
       "truth": [1, 0, 0, 2, 1, 2, 0, 0],
+      "date": 20240320,
       "judge": "Emily",
       "buyer": "Carl",
       "participants": [
@@ -195,6 +197,7 @@
       "description": "Känner man skillnad på olika smaker av TUC kex?",
       "alternatives": ["Paprika", "Chili", "Gräddfill&lök"],
       "truth": [1, 0, 1, 2, 0, 1, 2, 1],
+      "date": 20240325,
       "judge": "Olov",
       "buyer": "Jimmy",
       "participants": [

@@ -8,6 +8,28 @@ const TestDetails = () => {
   const navigate = useNavigate();
   const test = data.tests.find((t) => t.name === testName);
 
+  // Function to format the date
+  const formatDate = (dateString) => {
+    const year = dateString.substring(0, 4);
+    const month = parseInt(dateString.substring(4, 6));
+    const day = dateString.substring(6, 8);
+    const months = [
+      "januari",
+      "februari",
+      "mars",
+      "april",
+      "maj",
+      "juni",
+      "juli",
+      "augusti",
+      "september",
+      "oktober",
+      "november",
+      "december",
+    ];
+    return `${parseInt(day)} ${months[month - 1]} ${year}`;
+  };
+
   // Sort participants by correctness in descending order
   const sortedParticipants = test.participants
     .map((participant) => {
@@ -61,10 +83,15 @@ const TestDetails = () => {
     }
   });
 
+  if (!test) {
+    return <p>Test not found. Please select a valid test.</p>;
+  }
+
   return (
     <div>
       <button onClick={() => navigate("/")}>Back to Homepage</button>
       <h2>Test: {testName}</h2>
+      <h2>Date: {formatDate(test.date.toString())}</h2>
       <h3>Judge: {test.judge}</h3>
       <p>{test.description}</p>
 

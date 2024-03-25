@@ -5,6 +5,7 @@
       "description": "Smakar vit, grön och röd likadant?",
       "alternatives": ["vit", "grön", "röd"],
       "truth": [2, 0, 1, 1, 2, 1, 0, 0],
+      "date": 20240101,
       "judge": "Arvid",
       "buyer": "Jimmy",
       "participants": [
@@ -31,6 +32,7 @@
       "description": "Känner man skillnad på styrka?",
       "alternatives": ["svag", "mellan", "stark"],
       "truth": [2, 1, 1, 0, 2, 1, 0, 2],
+      "date": 20240101,
       "judge": "Emily",
       "buyer": "None",
       "participants": [
@@ -57,6 +59,7 @@
       "description": "Känner man skillnad på Trocadero?",
       "alternatives": ["original", "zero", "hallon"],
       "truth": [2, 0, 2, 1, 1, 0, 2, 1],
+      "date": 20240101,
       "judge": "Emily",
       "buyer": "Jimmy",
       "participants": [
@@ -83,6 +86,7 @@
       "description": "Känner man skillnad på frukttoppar?",
       "alternatives": ["grön", "gul", "röd"],
       "truth": [2, 2, 0, 1, 2, 1, 0, 1],
+      "date": 20240101,
       "judge": "Hans",
       "buyer": "William",
       "participants": [
@@ -113,6 +117,7 @@
       "description": "Känner man skillnad på mjölk?",
       "alternatives": ["grön", "blå", "röd"],
       "truth": [1, 2, 0, 2, 0, 0, 2, 1],
+      "date": 20240101,
       "judge": "Fredrik",
       "buyer": "Simon",
       "participants": [

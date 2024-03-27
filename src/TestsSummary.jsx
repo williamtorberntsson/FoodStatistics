@@ -55,6 +55,66 @@ const TestsSummary = () => {
     return secondHalfAverage - firstHalfAverage; // Improvement is the difference in averages
   };
 
+  const calculateDifficultyCoefficients = (tests) => {
+    let averageScores = {};
+    let difficultyCoefficients = {};
+
+    // Calculate average scores
+    tests.forEach((test) => {
+      const totalCorrectGuesses = test.participants.reduce(
+        (acc, participant) => {
+          const correctGuesses = participant.guesses.filter(
+            (guess, index) => guess === test.truth[index]
+          ).length;
+          return acc + correctGuesses;
+        },
+        0
+      );
+
+      const totalGuesses = test.truth.length * test.participants.length;
+      averageScores[test.name] = totalCorrectGuesses / totalGuesses;
+    });
+
+    // Determine difficulty coefficients based on inverse of average scores
+    Object.keys(averageScores).forEach((testName) => {
+      difficultyCoefficients[testName] = 1 / averageScores[testName];
+    });
+
+    // Normalize difficulty coefficients
+    const totalCoefficient = Object.values(difficultyCoefficients).reduce(
+      (acc, val) => acc + val,
+      0
+    );
+    Object.keys(difficultyCoefficients).forEach((key) => {
+      difficultyCoefficients[key] =
+        (difficultyCoefficients[key] * tests.length) / totalCoefficient;
+    });
+
+    return difficultyCoefficients;
+  };
+
+  // Use this function in calculateAdjustedScore as shown in the previous code snippet
+
+  const calculateAdjustedScore = (participantName, tests) => {
+    const difficultyCoefficients = calculateDifficultyCoefficients(tests);
+    let totalAdjustedScore = 0;
+
+    tests.forEach((test) => {
+      const participant = test.participants.find(
+        (p) => p.name === participantName
+      );
+      if (participant) {
+        const correctGuesses = participant.guesses.filter(
+          (guess, index) => guess === test.truth[index]
+        ).length;
+        totalAdjustedScore +=
+          correctGuesses * difficultyCoefficients[test.name];
+      }
+    });
+
+    return totalAdjustedScore; // Could be normalized or adjusted further
+  };
+
   // Function to calculate color based on percentage
   const getColorForPercentage = (percentage) => {
     // Interpolate between red (0%) and green (100%)
@@ -72,10 +132,12 @@ const TestsSummary = () => {
   // Generate an array of participants with their scores
   const participantsScores = data.tests
     .flatMap((test) => test.participants.map((participant) => participant.name))
-    .filter((value, index, self) => self.indexOf(value) === index) // Remove duplicate names
+    .filter((value, index, self) => self.indexOf(value) === index)
     .map((name) => ({
       name,
       score: calculateCorrectness(name, data.tests),
+      improvement: calculateImprovement(name, data.tests),
+      adjustedScore: calculateAdjustedScore(name, data.tests),
     }));
 
   // Sort the participants by score in descending order
@@ -91,12 +153,13 @@ const TestsSummary = () => {
           <tr>
             <th>Participant</th>
             <th>Correctness</th>
-            <th>Improvement</th> {/* New column for improvement */}
+            <th>Improvement</th>
+            <th>Adjusted Score</th>
           </tr>
         </thead>
         <tbody>
-          {sortedParticipants.map(({ name, score }) => {
-            const improvement = calculateImprovement(name, data.tests); // Calculate improvement for each participant
+          {participantsScores.map(({ name, score, adjustedScore }) => {
+            const improvement = calculateImprovement(name, data.tests);
             return (
               <tr key={name} className="table-row">
                 <td>
@@ -105,7 +168,8 @@ const TestsSummary = () => {
                   </Link>
                 </td>
                 <td>{renderColoredPercentage(score)}</td>
-                <td>{improvement.toFixed(2)} %</td> {/* Display improvement */}
+                <td>{improvement.toFixed(2)} %</td>
+                <td>{adjustedScore.toFixed(2)}</td>
               </tr>
             );
           })}

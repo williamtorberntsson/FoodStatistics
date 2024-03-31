@@ -260,9 +260,9 @@
       ]
     },
     {
-      "name": "Paprika",
-      "description": "Känner man skillnad på paprik färger?",
-      "alternatives": ["Orange", "Gul", "Röd"],
+      "name": "Kolsyrat Vatten",
+      "description": "Känner man skillnad på olika kolsyrat vatten märken?",
+      "alternatives": ["Loka", "Ramlösa", "Saab"],
       "truth": [0, 2, 1, 1, 2, 1, 2, 0],
       "date": 20240327,
       "judge": "Olov",

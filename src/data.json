@@ -258,6 +258,37 @@
           "guesses": [1, 0, 2, 0, 1, 2, 1, 0]
         }               
       ]
+    },
+    {
+      "name": "Paprika",
+      "description": "Känner man skillnad på paprik färger?",
+      "alternatives": ["Orange", "Gul", "Röd"],
+      "truth": [0, 2, 1, 1, 2, 1, 2, 0],
+      "date": 20240327,
+      "judge": "Olov",
+      "buyer": "Carl",
+      "participants": [
+        {
+          "name": "Jimmy",
+          "guesses": [1, 2, 0, 1, 2, 0, 2, 0]
+        },
+        {
+          "name": "Simon",
+          "guesses": [0, 1, 1, 1, 2, 1, 2, 0]
+        },
+        {
+          "name": "William",
+          "guesses": [1, 0, 0, 1, 2, 1, 2, 0]
+        },
+        {
+          "name": "Carl",
+          "guesses": [1, 0, 2, 1, 0, 0, 2, 0]
+        },
+        {
+          "name": "Sebastian",
+          "guesses": [1, 1, 2, 1, 0, 1, 0, 2]
+        }                 
+      ]
     }
   ]
 }

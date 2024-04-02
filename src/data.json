@@ -289,6 +289,33 @@
           "guesses": [1, 1, 2, 1, 0, 1, 0, 2]
         }                 
       ]
+    },
+    {
+      "name": "Smör",
+      "description": "Känner man skillnad på olika Smör?",
+      "alternatives": ["Bregott", "Lätta", "Flora"],
+      "truth": [1, 0, 2, 2, 0, 0, 2, 1],
+      "date": 20240402,
+      "judge": "Emir & Edwin",
+      "buyer": "Simon",
+      "participants": [
+        {
+          "name": "Jimmy",
+          "guesses": [2, 1, 0, 0, 2, 1, 0, 1]
+        },
+        {
+          "name": "Simon",
+          "guesses": [1, 2, 0, 0, 0, 0, 2, 1]
+        },
+        {
+          "name": "William",
+          "guesses": [0, 2, 0, 0, 1, 2, 1, 2]
+        },
+        {
+          "name": "Carl",
+          "guesses": [1, 0, 1, 2, 0, 0, 2, 1]
+        }                
+      ]
     }
   ]
 }

@@ -316,6 +316,49 @@
           "guesses": [1, 0, 1, 2, 0, 0, 2, 1]
         }                
       ]
+    },
+    {
+      "name": "Digestive",
+      "description": "Känner man skillnad på olika digestivemärken?",
+      "alternatives": ["Göteborg", "McVities", "Coop"],
+      "truth": [2, 1, 0, 2, 0, 1, 2, 0],
+      "date": 20240419,
+      "judge": "Erik",
+      "buyer": "William",
+      "participants": [
+        {
+          "name": "Gaute",
+          "guesses": [2, 1, 0, 1, 0, 2, 2, 0]
+        },
+        {
+          "name": "Jimmy",
+          "guesses": [1, 2, 0, 0, 0, 2, 1, 0]
+        },
+        {
+          "name": "Simon",
+          "guesses": [0, 2, 0, 1, 0, 2, 0, 0]
+        },
+        {
+          "name": "William",
+          "guesses": [1, 2, 0, 2, 0, 1, 1, 2]
+        },
+        {
+          "name": "Carl",
+          "guesses": [1, 0, 1, 2, 0, 1, 2, 1]
+        },
+        {
+          "name": "Emir",
+          "guesses": [2, 0, 2, 1, 2, 1, 0, 0]
+        },
+        {
+          "name": "Hans",
+          "guesses": [1, 2, 0, 1, 0, 2, 1, 0]
+        },
+        {
+          "name": "Tommy",
+          "guesses": [1, 2, 0, 0, 1, 2, 1, 1]
+        }             
+      ]
     }
   ]
 }

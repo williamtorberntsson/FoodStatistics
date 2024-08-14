@@ -1,12 +1,12 @@
 {
   "futureTests": [
     {
-      "name": "Paprika",
-      "itemsToTest": ["Röd", "Gul", "Grön"]
+      "name": "Chips",
+      "itemsToTest": ["Estrella", "OLW", "???"]
     },
     {
-      "name": "Vatten",
-      "itemsToTest": ["Kranvatten", "Loka", "Ramlösa"]
+      "name": "Bearneissås",
+      "itemsToTest": ["Lohmanders", "Ica", "???"]
     }
   ]
 }

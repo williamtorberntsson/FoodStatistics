@@ -1,0 +1,11 @@
+{
+  "battleTypes": [
+    {
+      "id": "innebandy",
+      "name": "Innebandy",
+      "description": "Indoor floor ball game",
+      "scoringType": "points",
+      "icon": "🏑"
+    }
+  ]
+} 

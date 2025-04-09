@@ -1,0 +1,76 @@
+{
+  "name": "Ahlgrens bilar",
+  "description": "Smakar vit, grön och röd likadant?",
+  "alternatives": [
+    "vit",
+    "grön",
+    "röd"
+  ],
+  "truth": [
+    2,
+    0,
+    1,
+    1,
+    2,
+    1,
+    0,
+    0
+  ],
+  "date": 20240101,
+  "judge": "Arvid",
+  "buyer": "Jimmy",
+  "participants": [
+    {
+      "name": "Jimmy",
+      "guesses": [
+        2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "William",
+      "guesses": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Carl",
+      "guesses": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "Simon",
+      "guesses": [
+        0,
+        2,
+        0,
+        1,
+        1,
+        2,
+        0,
+        1
+      ]
+    }
+  ]
+}

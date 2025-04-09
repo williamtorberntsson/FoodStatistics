@@ -1,0 +1,115 @@
+{
+  "name": "Ketchup",
+  "description": "Känner man skillnad på olika ketchupmärken?",
+  "alternatives": [
+    "Heinz",
+    "Felix",
+    "Burco"
+  ],
+  "truth": [
+    1,
+    1,
+    2,
+    0,
+    2,
+    2,
+    1,
+    0
+  ],
+  "date": 20240814,
+  "judge": "Simon",
+  "buyer": "Simon",
+  "participants": [
+    {
+      "name": "Gaute",
+      "guesses": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Jimmy",
+      "guesses": [
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Patrick",
+      "guesses": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "William",
+      "guesses": [
+        0,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Carl",
+      "guesses": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Ludde",
+      "guesses": [
+        2,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Hans",
+      "guesses": [
+        2,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0
+      ]
+    }
+  ]
+}

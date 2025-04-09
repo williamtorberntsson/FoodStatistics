@@ -1,0 +1,13 @@
+{
+  "battles": [
+    {
+      "id": "2024-01-innebandy",
+      "type": "innebandy",
+      "date": "2024-01",
+      "teams": {
+        "image-processing": 7,
+        "image-based-navigation": 3
+      }
+    }
+  ]
+} 

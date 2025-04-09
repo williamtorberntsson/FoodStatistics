@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import StatisticsPage from './pages/StatisticsPage';
-import BattlePage from './pages/BattlePage';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import StatisticsPage from "./pages/StatisticsPage";
+import BattlePage from "./pages/BattlePage";
 
 function App() {
   return (
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

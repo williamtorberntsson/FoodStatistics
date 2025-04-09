@@ -1,76 +1,27 @@
 {
   "name": "Paprika",
   "description": "Känner man skillnad på paprik färger?",
-  "alternatives": [
-    "Orange",
-    "Gul",
-    "Röd"
-  ],
-  "truth": [
-    0,
-    0,
-    0,
-    2,
-    1,
-    2,
-    2,
-    1
-  ],
+  "alternatives": ["Orange", "Gul", "Röd"],
+  "truth": [0, 0, 0, 2, 1, 2, 2, 1],
   "date": 20240326,
   "judge": "William",
   "buyer": "Jimmy",
   "participants": [
     {
       "name": "Jimmy",
-      "guesses": [
-        1,
-        1,
-        1,
-        2,
-        0,
-        0,
-        1,
-        0
-      ]
+      "guesses": [1, 1, 1, 2, 0, 0, 1, 0]
     },
     {
       "name": "Simon",
-      "guesses": [
-        0,
-        2,
-        1,
-        2,
-        0,
-        0,
-        1,
-        0
-      ]
+      "guesses": [0, 2, 1, 2, 0, 0, 1, 0]
     },
     {
       "name": "Emily",
-      "guesses": [
-        1,
-        2,
-        2,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
+      "guesses": [1, 0, 2, 0, 1, 1, 0, 0]
     },
     {
       "name": "Carl",
-      "guesses": [
-        1,
-        0,
-        2,
-        0,
-        1,
-        2,
-        1,
-        0
-      ]
+      "guesses": [1, 0, 2, 0, 1, 2, 1, 0]
     }
   ]
 }

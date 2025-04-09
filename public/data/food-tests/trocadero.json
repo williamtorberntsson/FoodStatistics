@@ -1,0 +1,76 @@
+{
+  "name": "Trocadero",
+  "description": "Känner man skillnad på Trocadero?",
+  "alternatives": [
+    "original",
+    "zero",
+    "hallon"
+  ],
+  "truth": [
+    2,
+    0,
+    2,
+    1,
+    1,
+    0,
+    2,
+    1
+  ],
+  "date": 20240101,
+  "judge": "Emily",
+  "buyer": "Jimmy",
+  "participants": [
+    {
+      "name": "William",
+      "guesses": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Simon",
+      "guesses": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Jimmy",
+      "guesses": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Carl",
+      "guesses": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        2,
+        0,
+        2
+      ]
+    }
+  ]
+}

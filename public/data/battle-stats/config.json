@@ -1,0 +1,18 @@
+{
+  "teams": {
+    "image-processing": {
+      "name": "Image Processing",
+      "color": "#2196f3"
+    },
+    "image-based-navigation": {
+      "name": "Image Based Navigation",
+      "color": "#f44336"
+    }
+  },
+  "battleTypes": {
+    "innebandy": {
+      "name": "Innebandy",
+      "icon": "🏑"
+    }
+  }
+} 

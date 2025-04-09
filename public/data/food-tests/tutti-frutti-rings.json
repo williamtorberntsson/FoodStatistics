@@ -1,0 +1,76 @@
+{
+  "name": "Tutti Frutti Rings",
+  "description": "Känner man skillnad på Tutti Frutti Ringar?",
+  "alternatives": [
+    "Röd/Gul",
+    "Rosa/Vit",
+    "Svart"
+  ],
+  "truth": [
+    0,
+    2,
+    0,
+    1,
+    2,
+    1,
+    1,
+    0
+  ],
+  "date": 20240319,
+  "judge": "Olov",
+  "buyer": "William",
+  "participants": [
+    {
+      "name": "Jimmy",
+      "guesses": [
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "Simon",
+      "guesses": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "William",
+      "guesses": [
+        0,
+        2,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Carl",
+      "guesses": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

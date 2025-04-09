@@ -1,0 +1,69 @@
+{
+  "tests": [
+    {
+      "name": "Ahlgrens bilar",
+      "date": 20240101,
+      "fileName": "ahlgrens-bilar.json"
+    },
+    {
+      "name": "Choklad",
+      "date": 20240101,
+      "fileName": "choklad.json"
+    },
+    {
+      "name": "Trocadero",
+      "date": 20240101,
+      "fileName": "trocadero.json"
+    },
+    {
+      "name": "Frukttoppar",
+      "date": 20240101,
+      "fileName": "frukttoppar.json"
+    },
+    {
+      "name": "Mjölk",
+      "date": 20240101,
+      "fileName": "mjölk.json"
+    },
+    {
+      "name": "Tutti Frutti Rings",
+      "date": 20240319,
+      "fileName": "tutti-frutti-rings.json"
+    },
+    {
+      "name": "Cola",
+      "date": 20240320,
+      "fileName": "cola.json"
+    },
+    {
+      "name": "TUC kex",
+      "date": 20240325,
+      "fileName": "tuc-kex.json"
+    },
+    {
+      "name": "Paprika",
+      "date": 20240326,
+      "fileName": "paprika.json"
+    },
+    {
+      "name": "Kolsyrat Vatten",
+      "date": 20240327,
+      "fileName": "kolsyrat-vatten.json"
+    },
+    {
+      "name": "Smör",
+      "date": 20240402,
+      "fileName": "smör.json"
+    },
+    {
+      "name": "Digestive",
+      "date": 20240419,
+      "fileName": "digestive.json"
+    },
+    {
+      "name": "Ketchup",
+      "date": 20240814,
+      "fileName": "ketchup.json"
+    }
+  ]
+}

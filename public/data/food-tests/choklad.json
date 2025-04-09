@@ -1,0 +1,76 @@
+{
+  "name": "Choklad",
+  "description": "Känner man skillnad på styrka?",
+  "alternatives": [
+    "svag",
+    "mellan",
+    "stark"
+  ],
+  "truth": [
+    2,
+    1,
+    1,
+    0,
+    2,
+    1,
+    0,
+    2
+  ],
+  "date": 20240101,
+  "judge": "Emily",
+  "buyer": "None",
+  "participants": [
+    {
+      "name": "William",
+      "guesses": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Sebastian",
+      "guesses": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Jimmy",
+      "guesses": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Simon",
+      "guesses": [
+        2,
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Frukttoppar",
+  "description": "Känner man skillnad på frukttoppar?",
+  "alternatives": [
+    "grön",
+    "gul",
+    "röd"
+  ],
+  "truth": [
+    2,
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1
+  ],
+  "date": 20240101,
+  "judge": "Hans",
+  "buyer": "William",
+  "participants": [
+    {
+      "name": "Jimmy",
+      "guesses": [
+        2,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Sebastian",
+      "guesses": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Simon",
+      "guesses": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "William",
+      "guesses": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Carl",
+      "guesses": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

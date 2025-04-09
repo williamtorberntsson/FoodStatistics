@@ -1,13 +1,27 @@
 {
   "battles": [
     {
-      "id": "2024-01-innebandy",
+      "id": "innebandy-1",
       "type": "innebandy",
-      "date": "2024-01",
+      "date": "2025-04-08",
       "teams": {
-        "image-processing": 7,
-        "image-based-navigation": 3
+        "image-processing": {
+          "score": 7,
+          "participants": [
+            "Jimmy",
+            "Simon",
+            "Ludvig",
+            "Henrik",
+            "Ola",
+            "Håkan",
+            "Micke"
+          ]
+        },
+        "image-based-navigation": {
+          "score": 3,
+          "participants": ["Emily", "Patrik", "Johan", "Carl", "Olof", "Adam"]
+        }
       }
     }
   ]
-} 
+}

@@ -1,102 +1,27 @@
 {
   "name": "TUC kex",
   "description": "Känner man skillnad på olika smaker av TUC kex?",
-  "alternatives": [
-    "Paprika",
-    "Chili",
-    "Gräddfill&lök"
-  ],
-  "truth": [
-    1,
-    0,
-    1,
-    2,
-    0,
-    1,
-    2,
-    1
-  ],
+  "alternatives": ["Paprika", "Chili", "Gräddfill&lök"],
+  "truth": [1, 0, 1, 2, 0, 1, 2, 1],
   "date": 20240325,
   "judge": "Olov",
   "buyer": "Jimmy",
   "participants": [
     {
       "name": "Jimmy",
-      "guesses": [
-        1,
-        0,
-        1,
-        2,
-        0,
-        1,
-        2,
-        1
-      ]
+      "guesses": [1, 0, 1, 2, 0, 1, 2, 1]
     },
     {
       "name": "Simon",
-      "guesses": [
-        1,
-        1,
-        1,
-        0,
-        0,
-        1,
-        2,
-        1
-      ]
+      "guesses": [1, 1, 1, 0, 0, 1, 2, 1]
     },
     {
       "name": "William",
-      "guesses": [
-        1,
-        2,
-        0,
-        2,
-        0,
-        1,
-        2,
-        1
-      ]
+      "guesses": [1, 2, 0, 2, 0, 1, 2, 1]
     },
     {
       "name": "Carl",
-      "guesses": [
-        1,
-        2,
-        1,
-        2,
-        0,
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "name": "Tim",
-      "guesses": [
-        0,
-        1,
-        2,
-        2,
-        1,
-        0,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Rikard",
-      "guesses": [
-        1,
-        2,
-        0,
-        2,
-        0,
-        0,
-        2,
-        1
-      ]
+      "guesses": [1, 2, 1, 2, 0, 1, 2, 1]
     }
   ]
 }

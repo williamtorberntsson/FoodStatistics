@@ -24,7 +24,8 @@ function BattleCard({ battle, config }) {
   const [expanded, setExpanded] = useState(false);
   const teams = Object.entries(battle.teams);
   const [[team1Id, team1Data], [team2Id, team2Data]] = teams;
-  const winner = team1Data.score > team2Data.score ? team1Id : team2Id;
+  const isTie = team1Data.score === team2Data.score;
+  const winner = isTie ? null : (team1Data.score > team2Data.score ? team1Id : team2Id);
 
   return (
     <Card sx={{ mb: 2 }}>
@@ -76,8 +77,8 @@ function BattleCard({ battle, config }) {
               flex: { xs: "unset", sm: 1 },
               textAlign: { xs: "center", sm: "right" },
               color: config.teams[team1Id].color,
-              fontWeight: winner === team1Id ? "bold" : "normal",
-              opacity: winner === team1Id ? 1 : 0.7,
+              fontWeight: (winner === team1Id || isTie) ? "bold" : "normal",
+              opacity: (winner === team1Id || isTie) ? 1 : 0.7,
               fontSize: { xs: "1.25rem", sm: "2rem" },
             }}
           >
@@ -130,8 +131,8 @@ function BattleCard({ battle, config }) {
               flex: { xs: "unset", sm: 1 },
               textAlign: "center",
               color: config.teams[team2Id].color,
-              fontWeight: winner === team2Id ? "bold" : "normal",
-              opacity: winner === team2Id ? 1 : 0.7,
+              fontWeight: (winner === team2Id || isTie) ? "bold" : "normal",
+              opacity: (winner === team2Id || isTie) ? 1 : 0.7,
               fontSize: { xs: "1.25rem", sm: "2rem" },
             }}
           >
@@ -295,9 +296,13 @@ function BattlePage() {
     battles.forEach((battle) => {
       const teams = Object.entries(battle.teams);
       const [[team1Id, team1Data], [team2Id, team2Data]] = teams;
-      const winner = team1Data.score > team2Data.score ? team1Id : team2Id;
+      const isTie = team1Data.score === team2Data.score;
+      const winner = isTie ? null : (team1Data.score > team2Data.score ? team1Id : team2Id);
 
-      if (winner === team1Id) {
+      if (isTie) {
+        // Ties don't count as wins or losses
+        return;
+      } else if (winner === team1Id) {
         stats[team1Id].wins += 1;
         stats[team2Id].losses += 1;
       } else {

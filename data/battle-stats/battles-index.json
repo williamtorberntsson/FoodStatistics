@@ -1,87 +1,122 @@
 {
-  "battles": [
-    {
-      "id": "innebandy-1",
-      "type": "innebandy",
-      "date": "2025-04-08",
-      "teams": {
-        "image-processing": {
-          "score": 7,
-          "participants": [
-            "Jimmy",
-            "Simon",
-            "Ludvig",
-            "Henrik",
-            "Ola",
-            "Håkan",
-            "Micke"
-          ]
-        },
-        "image-based-navigation": {
-          "score": 3,
-          "participants": ["Emily", "Patrik", "Johan", "Carl", "Olof", "Adam"]
-        }
-      }
+  "teams": {
+    "image-processing": {
+      "name": "Image Processing",
+      "color": "#2196f3"
     },
-    {
-      "id": "beach-volley-1",
-      "type": "beach-volley",
-      "date": "2025-06-15",
-      "teams": {
-        "image-processing": {
-          "score": 2,
-          "participants": []
-        },
-        "image-based-navigation": {
-          "score": 3,
-          "participants": []
-        }
-      }
-    },
-    {
-      "id": "football-1",
-      "type": "football",
-      "date": "2025-09-01",
-      "teams": {
-        "image-processing": {
-          "score": 4,
-          "participants": []
-        },
-        "image-based-navigation": {
-          "score": 2,
-          "participants": []
-        }
-      }
-    },
-    {
-      "id": "shuffleboard-1",
-      "type": "shuffleboard",
-      "date": "2025-10-22",
-      "teams": {
-        "image-processing": {
-          "score": 4,
-          "participants": []
-        },
-        "image-based-navigation": {
-          "score": 4,
-          "participants": []
-        }
-      }
-    },
-    {
-      "id": "boxingBag-1",
-      "type": "boxingBag",
-      "date": "2025-10-22",
-      "teams": {
-        "image-processing": {
-          "score": 909,
-          "participants": []
-        },
-        "image-based-navigation": {
-          "score": 874,
-          "participants": []
-        }
-      }
+    "image-based-navigation": {
+      "name": "Image Based Navigation",
+      "color": "#f44336"
     }
-  ]
+  },
+  "categories": {
+    "innebandy": {
+      "name": "Innebandy",
+      "icon": "🏑",
+      "battles": [
+        {
+          "id": "innebandy-1",
+          "date": "2025-04-08",
+          "teams": {
+            "image-processing": {
+              "score": 7,
+              "participants": [
+                "Jimmy",
+                "Simon",
+                "Ludvig",
+                "Henrik",
+                "Ola",
+                "Håkan",
+                "Micke"
+              ]
+            },
+            "image-based-navigation": {
+              "score": 3,
+              "participants": ["Emily", "Patrik", "Johan", "Carl", "Olof", "Adam"]
+            }
+          }
+        }
+      ]
+    },
+    "beach-volley": {
+      "name": "Beach Volley",
+      "icon": "🏐",
+      "battles": [
+        {
+          "id": "beach-volley-1",
+          "date": "2025-06-15",
+          "teams": {
+            "image-processing": {
+              "score": 2,
+              "participants": []
+            },
+            "image-based-navigation": {
+              "score": 3,
+              "participants": []
+            }
+          }
+        }
+      ]
+    },
+    "football": {
+      "name": "Football",
+      "icon": "⚽",
+      "battles": [
+        {
+          "id": "football-1",
+          "date": "2025-09-01",
+          "teams": {
+            "image-processing": {
+              "score": 4,
+              "participants": []
+            },
+            "image-based-navigation": {
+              "score": 2,
+              "participants": []
+            }
+          }
+        }
+      ]
+    },
+    "shuffleboard": {
+      "name": "Shuffleboard",
+      "icon": "🎯",
+      "battles": [
+        {
+          "id": "shuffleboard-1",
+          "date": "2025-10-22",
+          "teams": {
+            "image-processing": {
+              "score": 4,
+              "participants": []
+            },
+            "image-based-navigation": {
+              "score": 4,
+              "participants": []
+            }
+          }
+        }
+      ]
+    },
+    "boxingBag": {
+      "name": "Boxing Bag",
+      "icon": "🥊",
+      "battles": [
+        {
+          "id": "boxingBag-1",
+          "date": "2025-10-22",
+          "teams": {
+            "image-processing": {
+              "score": 909,
+              "participants": []
+            },
+            "image-based-navigation": {
+              "score": 874,
+              "participants": []
+            }
+          }
+        }
+      ]
+    }
+  }
 }

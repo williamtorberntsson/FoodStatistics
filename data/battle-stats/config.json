@@ -14,9 +14,17 @@
       "name": "Innebandy",
       "icon": "🏑"
     },
+    "football": {
+      "name": "Football",
+      "icon": "⚽"
+    },
     "shuffleboard": {
       "name": "Shuffleboard",
       "icon": "🎯"
+    },
+    "boxingBag": {
+      "name": "Boxing Bag",
+      "icon": "🥊"
     }
   }
-} 
+}

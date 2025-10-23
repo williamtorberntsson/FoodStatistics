@@ -24,9 +24,24 @@
       }
     },
     {
+      "id": "football-1",
+      "type": "football",
+      "date": "2025-09-01",
+      "teams": {
+        "image-processing": {
+          "score": 4,
+          "participants": []
+        },
+        "image-based-navigation": {
+          "score": 2,
+          "participants": []
+        }
+      }
+    },
+    {
       "id": "shuffleboard-1",
       "type": "shuffleboard",
-      "date": "2025-10-23",
+      "date": "2025-10-22",
       "teams": {
         "image-processing": {
           "score": 4,
@@ -34,6 +49,21 @@
         },
         "image-based-navigation": {
           "score": 4,
+          "participants": []
+        }
+      }
+    },
+    {
+      "id": "boxingBag-1",
+      "type": "boxingBag",
+      "date": "2025-10-22",
+      "teams": {
+        "image-processing": {
+          "score": 909,
+          "participants": []
+        },
+        "image-based-navigation": {
+          "score": 874,
           "participants": []
         }
       }

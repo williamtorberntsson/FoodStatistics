@@ -22,6 +22,21 @@
           "participants": ["Emily", "Patrik", "Johan", "Carl", "Olof", "Adam"]
         }
       }
+    },
+    {
+      "id": "shuffleboard-1",
+      "type": "shuffleboard",
+      "date": "2025-10-23",
+      "teams": {
+        "image-processing": {
+          "score": 4,
+          "participants": []
+        },
+        "image-based-navigation": {
+          "score": 4,
+          "participants": []
+        }
+      }
     }
   ]
 }
